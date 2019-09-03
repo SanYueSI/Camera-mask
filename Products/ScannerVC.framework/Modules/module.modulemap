@@ -1,0 +1,11 @@
+framework module ScannerVC {
+  umbrella header "ScannerVC.h"
+
+  export *
+  module * { export * }
+}
+
+module ScannerVC.Swift {
+    header "ScannerVC-Swift.h"
+    requires objc
+}
