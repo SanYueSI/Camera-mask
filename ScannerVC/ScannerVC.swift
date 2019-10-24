@@ -192,7 +192,7 @@ public class ScannerVC: UIViewController {
 
 
     func createView()  {
-        let bottomSpace = UIApplication.shared.statusBarFrame.size.width == 20 ? 0 : 49; //底部安全距离
+        let bottomSpace = UIApplication.shared.statusBarFrame.size.height == 20 ? 0 : 49; //底部安全距离
         let bottomY = K_Screen_height - bottomSpace //底部安全距离
         let topHight = Int(UIApplication.shared.statusBarFrame.size.height) + Int((self.navigationController?.navigationBar.frame.size.height)!);
         back_but = UIButton(type: .custom);
